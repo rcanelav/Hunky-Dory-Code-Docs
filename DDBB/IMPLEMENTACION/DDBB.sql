@@ -1,4 +1,4 @@
-drop database if exists hunkyDoryCode;
+-- drop database if exists hunkyDoryCode;
 create database hunkyDoryCode;
 use hunkyDoryCode;
 
@@ -40,8 +40,6 @@ create table posts(
     views int not null DEFAULT 0,
     category int not null,
     postedBy int not null,
-    likes int default 0,
-    dislikes int default 0,
     FOREIGN KEY (postedBy) REFERENCES users(id),
     FOREIGN KEY (category) REFERENCES technologies(id)
 );
@@ -60,8 +58,6 @@ create table answers (
     id int auto_increment primary key,
     content text(4000) not null,
     user_id int not null,
-    likes int not null,
-    dislikes int not null,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
@@ -172,21 +168,23 @@ insert into users_answers (user_id, answer_id, createdAt) VALUES
 update users
 set status = 'ACTIVE';
 
-select * from users;
-select * from posts;
+-- select * from users;
+-- select * from posts;
 
-select * from users_posts;
+-- select * from roles;
 
-select * from users_answers;
+-- select * from users_posts;
+
+-- select * from users_answers;
 
 
 
-show tables;
-desc users;
-desc posts;
-desc users_posts;
-desc answers;
-desc users_answers;
-desc posts_answers;
+-- show tables;
+-- desc users;
+-- desc posts;
+-- desc users_posts;
+-- desc answers;
+-- desc users_answers;
+-- desc posts_answers;
 
 
