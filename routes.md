@@ -1,59 +1,54 @@
-
 AUTH
 
-[POST] /api/v1/auth/login           // Login con correo/username
+ ✅ LISTO [POST] /api/v1/auth/login                     // Login con correo/username
 
-[POST] /api/v1/auth/google          // Login con Google
+ ✅ LISTO [POST] /api/v1/auth/google                    // Login con Google
 
-[POST] /api/v1/auth/facebook        // Login con Facebook
-
-[POST] /api/v1/auth/github          // Login con Github
-
+ ✅ LISTO[POST] /api/v1/auth/facebook                   // Login con Facebook
 
 USERS
 
-LISTA [POST] /api/v1/users/               // Crear usuario
+ ✅ LISTO [POST] /api/v1/users/                         // Crear usuario
 
-LISTA [POST] /api/v1/users/activation     // Activar usuario
+ ✅ LISTO [POST] /api/v1/users/activation               // Activar usuario
 
-[GET] /api/v1/users/:id                   // Consultar Perfil
+ ✅ LISTO [POST] /api/v1/users/confirmation             //Confirmar cambios de email
 
-[GET] /api/v1/users/                      // Lista de usuarios - CMS *
+ ✅ LISTO [GET] /api/v1/users/:id                       // Consultar Perfil
 
-[PUT] /api/v1/users/:id                   // Actualizar usuario
+ ✅  LISTO [GET] /api/v1/users/                         // Lista de usuarios - CMS *
 
-[DEL] /api/v1/users/:id                   // Eliminar usuario - Propio / CMS
+ ✅  LISTO  [PUT] /api/v1/users/:id                     // Actualizar usuario
 
-##########################################################################################
-                                                                                         #
-[GET] /api/v1/users/:id/answers/    // Obtener respuestas realizadas por EXPERTO (OJO)   #
-                                                                                         #
-[GET] /api/v1/users/:id/posts/    // Obtener preguntas realizadas por USUARIO (OJO)      #
-                                                                                         #
-##########################################################################################
+ ✅  LISTO  [PUT] /api/v1/users/:id/image               // Actualizar imagen de usuario
 
+ ✅  LISTO  [PUT] /api/v1/users/:id/role                // Actualizar role de usuario
 
-POSTS 
+[DEL] /api/v1/users/:id                                 // Eliminar usuario - Propio / CMS
 
-[GET] /api/v1/posts/                // Principal Obtener Posts / CMS
+[GET] /api/v1/users/:id/answers/                        // Obtener respuestas realizadas por EXPERTO 
 
-[POST] /api/v1/posts/               // Crear Post
-
-[GET] /api/v1/posts/:id             // Obtener Post por ID
-
-[PUT] /api/v1/posts/:id             // Actualizar Post
-
-[DEL] /api/v1/posts/:id             // Eliminar Post
+[GET] /api/v1/users/:id/posts/                          // Obtener preguntas realizadas por USUARIO 
 
 
----------------> [POST] /api/v1/posts/:id/answers/     // Publicar respuesta
+
+POSTS
+
+[GET] /api/v1/posts/                                    // Principal Obtener Posts / CMS
+
+[POST] /api/v1/posts/                                   // Crear Post
+
+[GET] /api/v1/posts/:id                                 // Obtener Post por ID
+
+[PUT] /api/v1/posts/:id                                 // Actualizar Post
+
+[DEL] /api/v1/posts/:id                                 // Eliminar Post
+
+[POST] /api/v1/posts/:id/answers/                       // Publicar respuesta
+
 
 ANSWERS
 
-[PUT] /api/v1/answers/:id           // Obtener respuesta por ID
+[PUT] /api/v1/answers/:id                               // Obtener respuesta por ID
 
-[DEL] /api/v1/answers/:id           // Eliminar respuesta  / CMS
-
-
-
-
+[DEL] /api/v1/answers/:id                               // Eliminar respuesta / CMS 
