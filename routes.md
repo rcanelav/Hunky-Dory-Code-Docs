@@ -24,11 +24,11 @@ USERS
 
  ✅  LISTO  [PUT] /api/v1/users/:id/role                // Actualizar role de usuario
 
-[DEL] /api/v1/users/:id                                 // Eliminar usuario - Propio / CMS
+ ✅  LISTO  [DEL] /api/v1/users/:id                     // Eliminar usuario - Propio / CMS
 
-[GET] /api/v1/users/:id/answers/                        // Obtener respuestas realizadas por EXPERTO 
+ ✅  LISTO  [GET] /api/v1/users/:id/answers/            // Obtener respuestas realizadas por EXPERTO 
 
-[GET] /api/v1/users/:id/posts/                          // Obtener preguntas realizadas por USUARIO 
+ ✅  LISTO  [GET] /api/v1/users/:id/posts/              // Obtener preguntas realizadas por USUARIO 
 
 
 
