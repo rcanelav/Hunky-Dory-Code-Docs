@@ -49,6 +49,6 @@ POSTS
 
 ANSWERS
 
-[PUT] /api/v1/answers/:id                               // Obtener respuesta por ID
+ ✅  LISTO  [GET] /api/v1/answers/:id                  // Obtener respuesta por ID
 
-[DEL] /api/v1/answers/:id                               // Eliminar respuesta / CMS 
+ ✅  LISTO  [DEL] /api/v1/answers/:id                  // Eliminar respuesta / CMS 
